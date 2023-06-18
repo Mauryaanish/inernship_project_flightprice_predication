@@ -1,0 +1,13 @@
+[ 2023-06-18 10:35:41,005 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-18 10:35:41,049 ] 187 werkzeug - INFO -  * Debugger PIN: 110-578-817
+[ 2023-06-18 10:35:42,615 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-06-18 10:35:42,800 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:42] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-06-18 10:35:42,828 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:42] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-06-18 10:35:43,004 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:43] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-18 10:35:43,152 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:43] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-18 10:35:52,028 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:52] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-06-18 10:35:52,153 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:52] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-06-18 10:35:52,163 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:52] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-06-18 10:35:52,247 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:52] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-18 10:35:52,282 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 10:35:52] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-18 10:37:11,728 ] 187 werkzeug - INFO -  * Detected change in 'C:\\internship_project_flightprice\\app.py', reloading

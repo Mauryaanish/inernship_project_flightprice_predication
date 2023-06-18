@@ -1,0 +1,8 @@
+[ 2023-06-17 23:53:48,063 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-17 23:53:48,115 ] 187 werkzeug - INFO -  * Debugger PIN: 110-578-817
+[ 2023-06-17 23:54:33,691 ] 187 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2023 23:54:33] "[35m[1mGET /predict HTTP/1.1[0m" 500 -
+[ 2023-06-17 23:54:34,281 ] 187 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2023 23:54:34] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2023-06-17 23:54:34,290 ] 187 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2023 23:54:34] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2023-06-17 23:54:34,525 ] 187 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2023 23:54:34] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2023-06-17 23:54:34,644 ] 187 werkzeug - INFO - 127.0.0.1 - - [17/Jun/2023 23:54:34] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-18 10:18:33,305 ] 187 werkzeug - INFO -  * Detected change in 'C:\\internship_project_flightprice\\app.py', reloading
