@@ -1,0 +1,10 @@
+[ 2023-06-18 23:43:16,908 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-18 23:43:16,909 ] 187 werkzeug - INFO -  * Debugger PIN: 785-169-994
+[ 2023-06-18 23:43:21,527 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 23:43:21] "GET /predict HTTP/1.1" 200 -
+[ 2023-06-18 23:43:21,788 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 23:43:21] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+[ 2023-06-18 23:43:55,028 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 23:43:55] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-06-18 23:43:55,067 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 23:43:55] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-06-18 23:43:55,178 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 23:43:55] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-06-18 23:43:55,416 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 23:43:55] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-18 23:43:55,483 ] 187 werkzeug - INFO - 127.0.0.1 - - [18/Jun/2023 23:43:55] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-18 23:44:37,161 ] 187 werkzeug - INFO -  * Detected change in 'C:\\internship_project_flightprice\\application.py', reloading

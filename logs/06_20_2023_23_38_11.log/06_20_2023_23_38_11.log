@@ -1,0 +1,25 @@
+[ 2023-06-20 23:38:13,365 ] 24 root - INFO - Data Ingestion Method Starts
+[ 2023-06-20 23:38:16,979 ] 27 root - INFO - Dateset read as pandas Dataframe
+[ 2023-06-20 23:38:16,979 ] 29 root - INFO - Cleaning Parth Start
+[ 2023-06-20 23:38:17,337 ] 90 root - INFO - Data Cealing Part is Done
+[ 2023-06-20 23:38:17,412 ] 96 root - INFO - Train Test Split
+[ 2023-06-20 23:38:17,481 ] 101 root - INFO - Ingetion of data is completed
+[ 2023-06-20 23:38:17,594 ] 75 root - INFO - Read train and test data completed
+[ 2023-06-20 23:38:17,599 ] 76 root - INFO - Train Dataframe Head : 
+             Airline   Source Destination Total_Stops  Price  Journey_Day  Journey_Month  Dep_hour  Dep_min  Arrival_hour  Arrival_min  Duration_hour  Duration_min
+0        Jet Airways   Mumbai   Hyderabad    non-stop   8040           27              6        10       20            11           50              1            30
+1           SpiceJet  Kolkata    Banglore    non-stop   3873           21              6        17       10            19           40              2            30
+2  Multiple carriers    Delhi      Cochin      1 stop  13377           27              5        15        0             1           30             10            30
+3           Air Asia  Kolkata    Banglore      1 stop   5192            9              5        22       40            10           40             12             0
+4          Air India    Delhi      Cochin     2 stops   9968            9              6        19       45            19           15             23            30
+[ 2023-06-20 23:38:17,607 ] 77 root - INFO - Test Dataframe Head  : 
+             Airline   Source Destination Total_Stops  Price  Journey_Day  Journey_Month  Dep_hour  Dep_min  Arrival_hour  Arrival_min  Duration_hour  Duration_min
+0  Multiple carriers    Delhi      Cochin     2 stops  16655           21              5        15        5             1           30             10            25
+1              GoAir    Delhi      Cochin      1 stop   4959            3              6        10       35            19           35              9             0
+2            Vistara  Kolkata    Banglore      1 stop   9187            9              5        20       20             9            5             12            45
+3             IndiGo  Chennai     Kolkata    non-stop   3858           24              5        14       45            17            5              2            20
+4        Jet Airways    Delhi      Cochin      1 stop  12898           21              5        22       50             4           25              5            35
+[ 2023-06-20 23:38:17,607 ] 79 root - INFO - Obtaining preprocessing object
+[ 2023-06-20 23:38:17,607 ] 26 root - INFO - Data Transformation initiated
+[ 2023-06-20 23:38:17,607 ] 34 root - INFO - Pipeline Initiated
+[ 2023-06-20 23:38:17,617 ] 117 root - INFO - Exception occured in the initiate_datatransformation

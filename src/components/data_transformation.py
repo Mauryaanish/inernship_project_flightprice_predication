@@ -28,8 +28,8 @@ class DataTransformation:
 
             # Define which columns should be ordinal-encoded and which should be scaled
 
-            categorical_cols = ['Airline', 'Source', 'Destination']
-            numerical_cols = ['Total_Stops', 'Journey_Day', 'Journey_Month', 'Dep_hour', 'Dep_min','Arrival_hour', 'Arrival_min', 'Duration_hour', 'Duration_min']
+            categorical_cols = ['Airline', 'Source', 'Destination' , ]
+            numerical_cols = ['Total_Stops' , 'Journey_Day', 'Journey_Month', 'Dep_hour', 'Dep_min','Arrival_hour', 'Arrival_min', 'Duration_hour', 'Duration_min']
 
             logging.info('Pipeline Initiated')
 
@@ -37,8 +37,8 @@ class DataTransformation:
             # numerical pipeline
             num_pipeline = Pipeline(
                             steps =[
-                                ("imputer" , SimpleImputer(strategy = 'median')),
-                                ("scaler" , StandardScaler())
+                            ("imputer" , SimpleImputer( strategy='median', fill_value=None)),
+                            ("scaler" , StandardScaler())
                             ]
                             )
             #categorical pipeline

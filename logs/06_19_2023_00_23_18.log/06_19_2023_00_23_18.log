@@ -1,0 +1,10 @@
+[ 2023-06-19 00:23:20,272 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-19 00:23:20,290 ] 187 werkzeug - INFO -  * Debugger PIN: 785-169-994
+[ 2023-06-19 00:23:25,008 ] 79 root - INFO - DataFrame Gathered
+[ 2023-06-19 00:23:29,006 ] 27 root - INFO - Exception occured in prediction
+[ 2023-06-19 00:23:29,182 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 00:23:29] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-06-19 00:23:29,487 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 00:23:29] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-06-19 00:23:29,505 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 00:23:29] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-06-19 00:23:29,612 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 00:23:29] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-19 00:23:29,749 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 00:23:29] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-19 00:25:10,027 ] 187 werkzeug - INFO -  * Detected change in 'c:\\internship_project_flightprice\\src\\components\\data_transformation.py', reloading

@@ -3,4 +3,5 @@ numpy
 seaborn
 Flask
 scikit-learn
+flask_cors
 -e .

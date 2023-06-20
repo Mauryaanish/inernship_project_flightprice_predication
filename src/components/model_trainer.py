@@ -52,6 +52,11 @@ class ModelTrainer:
 
             logging.info(f'Model Name:- {model} | Model Score:- {score}')
 
+            save_object(
+                    file_path=self.model_trainer_config.trained_model_file_path,
+                    obj=model
+                )
+
         except Exception as e:
                 logging.info('Exception occured at Model Training')
                 raise CustomException(e,sys)

@@ -1,0 +1,4 @@
+[ 2023-06-19 22:14:56,898 ] 24 root - INFO - Data Ingestion Method Starts
+[ 2023-06-19 22:14:59,803 ] 27 root - INFO - Dateset read as pandas Dataframe
+[ 2023-06-19 22:14:59,804 ] 29 root - INFO - Cleaning Parth Start
+[ 2023-06-19 22:15:00,064 ] 110 root - INFO - Exception occured at data Ingestion stage

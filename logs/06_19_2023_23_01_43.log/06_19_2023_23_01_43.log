@@ -1,0 +1,9 @@
+[ 2023-06-19 23:01:44,872 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-19 23:01:44,893 ] 187 werkzeug - INFO -  * Debugger PIN: 785-169-994
+[ 2023-06-19 23:01:46,342 ] 83 root - INFO - Exception occured in prediction pipeline
+[ 2023-06-19 23:01:46,391 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:01:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-06-19 23:01:46,495 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:01:46] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-06-19 23:01:46,510 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:01:46] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-06-19 23:01:46,592 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:01:46] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-19 23:01:46,634 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:01:46] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-06-19 23:02:13,482 ] 187 werkzeug - INFO -  * Detected change in 'C:\\internship_project_flightprice\\src\\pipeline\\prediction_pipeline.py', reloading

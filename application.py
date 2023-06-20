@@ -1,6 +1,6 @@
 from flask import Flask , request , render_template,jsonify
 from src.pipeline.prediction_pipeline import CustomData , PredictionPipeline
-import calendar
+import pandas as pd
 
 
 
@@ -18,21 +18,35 @@ def home_page():
 def predict_datapoint():
     if request.method =='GET':
         return render_template('home.html')
-    
+        
     else:
+       
         data = CustomData(
-            Airline = str(request.form.get('Airline')),
-            Source = str(request.form.get('Source')),
-            Destination = str(request.form.get('Destination')),
-            Total_Stops=  str(request.form.get('Total_Stops')),
-            Jounery_Day=  int(request.form.get('Journery')),
-            Jounery_Month= int(request.form.get('Jounery_Month')),
-            Dep_hour= int(request.form.get('Dep_hour')),
-            Dep_min= int(request.form.get('Dep_min')),
-            Arrival_hour=int(request.form.get('Arrival_hour')),
-            Arrival_min= int(request.form.get('Arrival_min')),
-            Duration_hour=int(request.form.get('Duration_hour')),
-            Duration_min=int(request.form.get('Duration_min'))
+        Airline=str(request.form.get('Airline')),
+        Source = str(request.form.get('Srouce')),
+        Destination = str(request.form.get('Destination')),
+        Total_Stops = str(request.form.get('Total_Stops')),
+         # Date_of_Journey
+        #date_dep = request.form["Dep_Time"]
+        Journey_Day = int(pd.to_datetime(request.form["Dep_Time"], format="%Y-%m-%dT%H:%M").day),
+        Journey_Month = int(pd.to_datetime(request.form["Dep_Time"], format ="%Y-%m-%dT%H:%M").month),
+        # print("Journey Date : ",Journey_day, Journey_month)
+
+        # Departure
+        Dep_hour = int(pd.to_datetime(request.form["Dep_Time"], format ="%Y-%m-%dT%H:%M").hour),
+        Dep_min = int(pd.to_datetime(request.form["Dep_Time"], format ="%Y-%m-%dT%H:%M").minute),
+        # print("Departure : ",Dep_hour, Dep_min)
+
+        # Arrival
+        #date_arr = request.form["Arrival_Time"]
+        Arrival_hour = int(pd.to_datetime(request.form["Arrival_Time"], format ="%Y-%m-%dT%H:%M").hour),
+        Arrival_min = int(pd.to_datetime(request.form["Arrival_Time"], format ="%Y-%m-%dT%H:%M").minute),
+        # print("Arrival : ", Arrival_hour, Arrival_min)
+
+        # Duration
+        Duration_hour =('Duration_hour'),
+        Duration_min =('Duration_min')
+        # print("Duration : ", dur_hour, dur_min)
 
         )
 
@@ -50,4 +64,4 @@ def predict_datapoint():
 
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0' , debug = True , port = 5500)
+    app.run(host = '0.0.0.0' , debug = True , port = 5000)

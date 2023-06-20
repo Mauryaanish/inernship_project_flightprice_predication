@@ -12,7 +12,7 @@ class PredictionPipeline:
     def predict(self , features):
         try:
             preprocessor_path = os.path.join('artifacts' , 'preprocessor.pkl')
-            model_path = os.path.join('artifacts' , 'model.pkl')
+            model_path = os.path.join('artifacts' ,'model.pkl')
 
             preprocessor = load_object(preprocessor_path)
             model = load_object(model_path)
@@ -33,26 +33,26 @@ class CustomData:
                 Airline: str,
                 Source : str,
                 Destination : str,
-                Total_Stops : str,
-                Jounery_Day : int,
-                Jounery_Month:int,
+                Total_Stops : int,
+                Journey_Day : int,
+                Journey_Month:int,
                 Dep_hour : int,
                 Dep_min : int,
                 Arrival_hour:int,
                 Arrival_min:int,
                 Duration_hour:int,
-                Duration_min:int):
+                Duration_min):
         
         self.Airline =  Airline
         self.Source = Source
         self.Destination  = Destination
-        self. Total_Stops =  Total_Stops
-        self.Jounery_Day = Jounery_Day
-        self.Jounery_Month  = Jounery_Month
+        self.Total_Stops =  Total_Stops
+        self.Journey_Day = Journey_Day
+        self.Journey_Month  = Journey_Month
         self.Dep_hour = Dep_hour
         self. Dep_min  = Dep_min
         self.Arrival_hour =Arrival_hour
-        self. Arrival_min =  Arrival_min
+        self.Arrival_min =  Arrival_min
         self.Duration_hour = Duration_hour
         self.Duration_min =Duration_min
         
@@ -64,14 +64,14 @@ class CustomData:
                 'Source' : [self.Source],
                 'Destination' : [self.Destination],
                 'Total_Stops' : [self.Total_Stops],
-                'Jounery_Day' : [self.Jounery_Day],
-                'Jounery_Month' : [self.Jounery_Month],
+                'Journey_Day' : [self.Journey_Day],
+                'Journey_Month' : [self.Journey_Month],
                 'Dep_hour' : [self.Dep_hour],
                 'Dep_min' : [self.Dep_min],
                 'Arrival_hour' : [self.Arrival_hour],
                 'Arrival_min' : [self.Arrival_min],
-                'Duration_hour' : [self.Duration_hour ],
-                'Duration_min' : [self.Duration_min],
+                'Duration_hour' : [self.Dep_hour - self.Arrival_hour],
+                'Duration_min' : [self.Dep_min - self.Arrival_min],
                 
             }
 
