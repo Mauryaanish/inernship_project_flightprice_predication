@@ -71,6 +71,119 @@ class DataTransformation:
                 # Reading train and test data
                 train_df = pd.read_csv(train_path)
                 test_df = pd.read_csv(test_path)
+                
+                total_stops_map = {'non-stop' : 0 , '1 stop' : 1 , '2 stops' : 2 , '3 stops' : 3 , '4 stops' : 4}
+                train_df['Total_Stops'] =train_df['Total_Stops'].replace(total_stops_map)
+
+                test_df['Total_Stops'] =test_df['Total_Stops'].replace(total_stops_map)
+                
+                train_df['Date_of_Journey'] = pd.to_datetime(train_df['Date_of_Journey'])
+
+                test_df['Date_of_Journey'] = pd.to_datetime(test_df['Date_of_Journey'])
+                # Extracting 'Date_of_Journey' Column into 'Journey_Month' & 'Journey_Date' Column: and journey year is not required
+                train_df['Journey_Day'] = train_df['Date_of_Journey'].dt.day
+                test_df['Journey_Day'] = test_df['Date_of_Journey'].dt.day
+
+                train_df['Journey_Day'] = train_df['Journey_Day'].fillna(0)
+                test_df['Journey_Day'] = test_df['Journey_Day'].fillna(0)
+
+                train_df['Journey_Day'] = train_df['Journey_Day'].astype('int')
+                test_df['Journey_Day'] = test_df['Journey_Day'].astype('int')
+
+                train_df['Journey_Month'] = train_df['Date_of_Journey'].dt.month
+                test_df['Journey_Month'] = test_df['Date_of_Journey'].dt.month
+
+                train_df['Journey_Month'] = train_df['Journey_Month'].fillna(0)
+                test_df['Journey_Month'] = test_df['Journey_Month'].fillna(0)
+
+                train_df['Journey_Month'] = train_df['Journey_Month'].astype('int')
+                test_df['Journey_Month'] = test_df['Journey_Month'].astype('int')
+
+                train_df['Dep_hour'] = train_df['Date_of_Journey'].dt.hour
+                test_df['Dep_hour'] = test_df['Date_of_Journey'].dt.hour
+
+                train_df['Dep_hour'] = train_df['Dep_hour'].fillna(0)
+                test_df['Dep_hour'] = test_df['Dep_hour'].fillna(0)
+
+                train_df['Dep_hour'] = train_df['Dep_hour'].astype('int')
+                test_df['Dep_hour'] = test_df['Dep_hour'].astype('int')
+
+
+                
+
+
+                train_df['Dep_min'] = train_df['Date_of_Journey'].dt.minute
+                test_df['Dep_min'] = test_df['Date_of_Journey'].dt.minute
+
+                train_df['Dep_min'] = train_df['Dep_min'].fillna(0)
+                test_df['Dep_min'] = test_df['Dep_min'].fillna(0)
+
+                train_df['Dep_min'] = train_df['Dep_min'].astype('int')
+                test_df['Dep_min'] = test_df['Dep_min'].astype('int')
+
+
+                train_df["Arrival_Time"]=pd.to_datetime(train_df['Arrival_Time'])
+                test_df["Arrival_Time"]=pd.to_datetime(test_df['Arrival_Time'])
+
+                train_df['Arrival_Day'] = train_df['Arrival_Time'].dt.day
+                test_df['Arrival_Day'] = test_df['Arrival_Time'].dt.day
+
+                train_df['Arrival_Day'] = train_df['Arrival_Day'].fillna(0)
+                test_df['Arrival_Day'] = test_df['Arrival_Day'].fillna(0)
+
+                train_df['Arrival_Day'] = train_df['Arrival_Day'].astype('int')
+                test_df['Arrival_Day'] = test_df['Arrival_Day'].astype('int')
+
+                train_df['Arrival_Month'] = train_df['Arrival_Time'].dt.month
+                test_df['Arrival_Month'] = test_df['Arrival_Time'].dt.month
+
+                train_df['Arrival_Month'] = train_df['Arrival_Month'].fillna(0)
+                test_df['Arrival_Month'] = test_df['Arrival_Month'].fillna(0)
+
+                train_df['Arrival_Month'] = train_df['Arrival_Month'].astype('int')
+                test_df['Arrival_Month'] = test_df['Arrival_Month'].astype('int')
+
+
+                train_df['Arrival_hour'] = train_df['Arrival_Time'].dt.hour
+                test_df['Arrival_hour'] = test_df['Arrival_Time'].dt.hour
+
+                train_df['Arrival_hour'] = train_df['Arrival_hour'].fillna(0)
+                test_df['Arrival_hour'] = test_df['Arrival_hour'].fillna(0)
+
+                train_df['Arrival_hour'] = train_df['Arrival_hour'].astype('int')
+                test_df['Arrival_hour'] = test_df['Arrival_hour'].astype('int')
+
+                train_df['Arrival_min'] = train_df['Arrival_Time'].dt.minute
+                test_df['Arrival_hour'] = test_df['Arrival_Time'].dt.minute
+
+                train_df['Arrival_min'] = train_df['Arrival_min'].fillna(0)
+                test_df['Arrival_hour'] = test_df['Arrival_min'].fillna(0)
+
+                train_df['Arrival_min'] = train_df['Arrival_min'].astype('int')
+                test_df['Arrival_hour'] = test_df['Arrival_min'].astype('int')
+
+                train_df['Duration_hour'] =  (train_df['Dep_hour']) - (train_df['Arrival_hour']) 
+                train_df['Duration_hour'] = train_df['Duration_hour'].fillna(0)
+                train_df['Duration_hour'] = train_df['Duration_hour'].astype('int')
+
+                test_df['Duration_hour'] =  (test_df['Dep_hour']) - (test_df['Arrival_hour'])
+                test_df['Duration_hour'] = test_df['Duration_hour'].fillna(0)
+                test_df['Duration_hour'] = test_df['Duration_hour'].astype('int')
+
+                train_df['Duration_min'] = (train_df['Dep_min']) - (train_df['Arrival_min'])
+                train_df['Duration_min'] = train_df['Duration_min'].fillna(0)
+                train_df['Duration_min'] = train_df['Duration_min'].astype('int')
+
+                test_df['Duration_min'] = (test_df['Dep_min']) - (test_df['Arrival_min'])
+                test_df['Duration_min'] = test_df['Duration_min'].fillna(0)
+                test_df['Duration_min'] = test_df['Duration_min'].astype('int')
+
+ 
+
+                train_df.drop(['Date_of_Journey' , 'Route' , 'Dep_Time' ,'Arrival_Time' , 'Duration' , 'Additional_Info' ] , axis = 1 , inplace = True)
+                test_df.drop(['Date_of_Journey' , 'Route' , 'Dep_Time' ,'Arrival_Time' , 'Duration' , 'Additional_Info' ] , axis = 1 , inplace = True)
+                
+
 
                 logging.info('Read train and test data completed')
                 logging.info(f'Train Dataframe Head : \n{train_df.head().to_string()}')

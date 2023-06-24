@@ -1,9 +1,0 @@
-[ 2023-06-19 23:02:25,750 ] 187 werkzeug - WARNING -  * Debugger is active!
-[ 2023-06-19 23:02:25,805 ] 187 werkzeug - INFO -  * Debugger PIN: 785-169-994
-[ 2023-06-19 23:02:27,294 ] 79 root - INFO - DataFrame Gathered
-[ 2023-06-19 23:02:31,214 ] 27 root - INFO - Exception occured in prediction
-[ 2023-06-19 23:02:31,411 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:02:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
-[ 2023-06-19 23:02:31,651 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:02:31] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-[ 2023-06-19 23:02:31,730 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:02:31] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-[ 2023-06-19 23:02:31,861 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:02:31] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-[ 2023-06-19 23:02:31,909 ] 187 werkzeug - INFO - 127.0.0.1 - - [19/Jun/2023 23:02:31] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

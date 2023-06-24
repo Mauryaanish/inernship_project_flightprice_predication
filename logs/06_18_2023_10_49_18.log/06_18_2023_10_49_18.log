@@ -1,3 +1,0 @@
-[ 2023-06-18 10:49:22,130 ] 187 werkzeug - WARNING -  * Debugger is active!
-[ 2023-06-18 10:49:22,146 ] 187 werkzeug - INFO -  * Debugger PIN: 110-578-817
-[ 2023-06-18 10:49:58,521 ] 187 werkzeug - INFO -  * Detected change in 'c:\\internship_project_flightprice\\app.py', reloading

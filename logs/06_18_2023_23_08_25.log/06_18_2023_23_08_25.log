@@ -1,3 +1,0 @@
-[ 2023-06-18 23:08:28,493 ] 187 werkzeug - WARNING -  * Debugger is active!
-[ 2023-06-18 23:08:28,502 ] 187 werkzeug - INFO -  * Debugger PIN: 785-169-994
-[ 2023-06-18 23:09:02,223 ] 187 werkzeug - INFO -  * Detected change in 'C:\\internship_project_flightprice\\src\\pipeline\\prediction_pipeline.py', reloading

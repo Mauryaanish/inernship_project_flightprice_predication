@@ -26,19 +26,23 @@ def predict_datapoint():
         Source = str(request.form.get('Srouce')),
         Destination = str(request.form.get('Destination')),
         Total_Stops = str(request.form.get('Total_Stops')),
+        #Journey_Day= int(request.form.get('Date_of_Journey')),
+        #Journey_Month=int(request.form.get('Date_of_Journey')),
+        #Arrival_hour=int(request.form.get('Arrival_Time')),
+        #Arrival_min = int(request.form.get('Arrival_Time')),
          # Date_of_Journey
-        #date_dep = request.form["Dep_Time"]
-        Journey_Day = int(pd.to_datetime(request.form["Dep_Time"], format="%Y-%m-%dT%H:%M").day),
-        Journey_Month = int(pd.to_datetime(request.form["Dep_Time"], format ="%Y-%m-%dT%H:%M").month),
+        #date_dep = request.form["Date_of_Journey"],
+        Journey_Day = int(pd.to_datetime(request.form["Date_of_Journey"], format="%Y-%m-%dT%H:%M").day),
+        Journey_Month = int(pd.to_datetime(request.form["Date_of_Journey"], format ="%Y-%m-%dT%H:%M").month),
         # print("Journey Date : ",Journey_day, Journey_month)
 
         # Departure
-        Dep_hour = int(pd.to_datetime(request.form["Dep_Time"], format ="%Y-%m-%dT%H:%M").hour),
-        Dep_min = int(pd.to_datetime(request.form["Dep_Time"], format ="%Y-%m-%dT%H:%M").minute),
+        Dep_hour = int(pd.to_datetime(request.form["Date_of_Journey"], format ="%Y-%m-%dT%H:%M").hour),
+        Dep_min = int(pd.to_datetime(request.form["Date_of_Journey"], format ="%Y-%m-%dT%H:%M").minute),
         # print("Departure : ",Dep_hour, Dep_min)
 
         # Arrival
-        #date_arr = request.form["Arrival_Time"]
+        #date_arr = request.form["Arrival_Time"],
         Arrival_hour = int(pd.to_datetime(request.form["Arrival_Time"], format ="%Y-%m-%dT%H:%M").hour),
         Arrival_min = int(pd.to_datetime(request.form["Arrival_Time"], format ="%Y-%m-%dT%H:%M").minute),
         # print("Arrival : ", Arrival_hour, Arrival_min)

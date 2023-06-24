@@ -70,8 +70,8 @@ class CustomData:
                 'Dep_min' : [self.Dep_min],
                 'Arrival_hour' : [self.Arrival_hour],
                 'Arrival_min' : [self.Arrival_min],
-                'Duration_hour' : [self.Dep_hour - self.Arrival_hour],
-                'Duration_min' : [self.Dep_min - self.Arrival_min],
+                'Duration_hour' : [self.Duration_hour],
+                'Duration_min' : [self.Duration_min]
                 
             }
 
@@ -84,4 +84,4 @@ class CustomData:
             raise CustomException(e ,sys)
 
 
-         
+

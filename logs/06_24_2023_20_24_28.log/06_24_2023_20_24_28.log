@@ -1,0 +1,28 @@
+[ 2023-06-24 20:24:31,954 ] 24 root - INFO - Data Ingestion Method Starts
+[ 2023-06-24 20:24:34,783 ] 27 root - INFO - Dateset read as pandas Dataframe
+[ 2023-06-24 20:24:34,783 ] 29 root - INFO - Cleaning Parth Start
+[ 2023-06-24 20:24:35,109 ] 90 root - INFO - Data Cealing Part is Done
+[ 2023-06-24 20:24:35,259 ] 96 root - INFO - Train Test Split
+[ 2023-06-24 20:24:35,421 ] 101 root - INFO - Ingetion of data is completed
+[ 2023-06-24 20:24:35,740 ] 188 root - INFO - Read train and test data completed
+[ 2023-06-24 20:24:35,750 ] 189 root - INFO - Train Dataframe Head : 
+             Airline   Source Destination  Total_Stops  Price  Journey_Day  Journey_Month  Dep_hour  Dep_min  Arrival_hour  Arrival_min  Duration_hour  Duration_min  Arrival_Day  Arrival_Month
+0        Jet Airways   Mumbai   Hyderabad          0.0   8040           27              6         0        0            11           50            -11           -50           24              6
+1           SpiceJet  Kolkata    Banglore          0.0   3873           21              6         0        0            19           40            -19           -40           24              6
+2  Multiple carriers    Delhi      Cochin          1.0  13377           27              5         0        0             1           30             -1           -30           24              6
+3           Air Asia  Kolkata    Banglore          1.0   5192            9              5         0        0            10           40            -10           -40           24              6
+4          Air India    Delhi      Cochin          2.0   9968            9              6         0        0            19           15            -19           -15           24              6
+[ 2023-06-24 20:24:35,753 ] 190 root - INFO - Test Dataframe Head  : 
+             Airline   Source Destination  Total_Stops  Price  Journey_Day  Journey_Month  Dep_hour  Dep_min  Arrival_hour  Arrival_min  Duration_hour  Duration_min  Arrival_Day  Arrival_Month
+0  Multiple carriers    Delhi      Cochin          2.0  16655           21              5         0        0            30           30            -30           -30           24              6
+1              GoAir    Delhi      Cochin          1.0   4959            3              6         0        0            35           35            -35           -35           24              6
+2            Vistara  Kolkata    Banglore          1.0   9187            9              5         0        0             5            5             -5            -5           24              6
+3             IndiGo  Chennai     Kolkata          0.0   3858           24              5         0        0             5            5             -5            -5           24              6
+4        Jet Airways    Delhi      Cochin          1.0  12898           21              5         0        0            25           25            -25           -25           24              6
+[ 2023-06-24 20:24:35,753 ] 192 root - INFO - Obtaining preprocessing object
+[ 2023-06-24 20:24:35,753 ] 26 root - INFO - Data Transformation initiated
+[ 2023-06-24 20:24:35,753 ] 34 root - INFO - Pipeline Initiated
+[ 2023-06-24 20:24:35,900 ] 209 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2023-06-24 20:24:35,937 ] 221 root - INFO - Preprocessor pickle file saved
+[ 2023-06-24 20:24:35,937 ] 29 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2023-06-24 20:24:39,660 ] 53 root - INFO - Model Name:- RandomForestRegressor() | Model Score:- 0.6666182889066845
