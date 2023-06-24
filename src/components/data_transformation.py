@@ -162,19 +162,19 @@ class DataTransformation:
                 train_df['Arrival_min'] = train_df['Arrival_min'].astype('int')
                 test_df['Arrival_hour'] = test_df['Arrival_min'].astype('int')
 
-                train_df['Duration_hour'] =  (train_df['Dep_hour']) - (train_df['Arrival_hour']) 
+                train_df['Duration_hour'] =  (train_df['Arrival_hour']) - (train_df['Dep_hour']) 
                 train_df['Duration_hour'] = train_df['Duration_hour'].fillna(0)
                 train_df['Duration_hour'] = train_df['Duration_hour'].astype('int')
 
-                test_df['Duration_hour'] =  (test_df['Dep_hour']) - (test_df['Arrival_hour'])
+                test_df['Duration_hour'] =   (test_df['Arrival_hour']) - (test_df['Dep_hour'])
                 test_df['Duration_hour'] = test_df['Duration_hour'].fillna(0)
                 test_df['Duration_hour'] = test_df['Duration_hour'].astype('int')
 
-                train_df['Duration_min'] = (train_df['Dep_min']) - (train_df['Arrival_min'])
+                train_df['Duration_min'] = (train_df['Arrival_min']) - (train_df['Dep_min'])
                 train_df['Duration_min'] = train_df['Duration_min'].fillna(0)
                 train_df['Duration_min'] = train_df['Duration_min'].astype('int')
 
-                test_df['Duration_min'] = (test_df['Dep_min']) - (test_df['Arrival_min'])
+                test_df['Duration_min'] = (test_df['Arrival_min']) - (test_df['Dep_min']) 
                 test_df['Duration_min'] = test_df['Duration_min'].fillna(0)
                 test_df['Duration_min'] = test_df['Duration_min'].astype('int')
 

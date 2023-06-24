@@ -23,7 +23,7 @@ def predict_datapoint():
        
         data = CustomData(
         Airline=str(request.form.get('Airline')),
-        Source = str(request.form.get('Srouce')),
+        Source = str(request.form.get('Source')),
         Destination = str(request.form.get('Destination')),
         Total_Stops = str(request.form.get('Total_Stops')),
         #Journey_Day= int(request.form.get('Date_of_Journey')),
@@ -47,12 +47,11 @@ def predict_datapoint():
         Arrival_min = int(pd.to_datetime(request.form["Arrival_Time"], format ="%Y-%m-%dT%H:%M").minute),
         # print("Arrival : ", Arrival_hour, Arrival_min)
 
-        # Duration
-        Duration_hour =('Duration_hour'),
-        Duration_min =('Duration_min')
-        # print("Duration : ", dur_hour, dur_min)
-
+        Duration_hour= (request.form.get('Duration_hour')),
+        Duration_min= (request.form.get('Duration_min'))
+   
         )
+        
 
         
         final_new_data = data.get_data_as_dataframe()
