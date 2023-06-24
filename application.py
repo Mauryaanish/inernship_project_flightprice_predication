@@ -1,5 +1,6 @@
 from flask import Flask , request , render_template,jsonify
 from src.pipeline.prediction_pipeline import CustomData , PredictionPipeline
+from pymongo.mongo_client import MongoClient
 import pandas as pd
 
 

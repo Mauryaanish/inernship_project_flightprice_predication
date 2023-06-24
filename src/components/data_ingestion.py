@@ -85,7 +85,7 @@ class DataIngestion:
 
             # drop columns 
 
-            #df.drop(['Date_of_Journey' , 'Route' , 'Dep_Time' ,'Arrival_Time' , 'Duration' , 'Additional_Info' ] , axis = 1 , inplace = True)
+            df.drop(['Date_of_Journey' , 'Route' , 'Dep_Time' ,'Arrival_Time' , 'Duration' , 'Additional_Info' ] , axis = 1 , inplace = True)
 
             logging.info('Data Cealing Part is Done')
 
