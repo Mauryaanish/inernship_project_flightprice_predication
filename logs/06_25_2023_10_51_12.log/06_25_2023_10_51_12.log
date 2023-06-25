@@ -1,0 +1,11 @@
+[ 2023-06-25 10:51:13,283 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-25 10:51:13,313 ] 187 werkzeug - INFO -  * Debugger PIN: 785-169-994
+[ 2023-06-25 10:51:15,495 ] 187 werkzeug - INFO - 127.0.0.1 - - [25/Jun/2023 10:51:15] "GET /predict HTTP/1.1" 200 -
+[ 2023-06-25 10:51:15,664 ] 187 werkzeug - INFO - 127.0.0.1 - - [25/Jun/2023 10:51:15] "GET /static/css/styles.css HTTP/1.1" 200 -
+[ 2023-06-25 10:52:00,794 ] 79 root - INFO - DataFrame Gathered
+[ 2023-06-25 10:52:00,867 ] 80 root - INFO - Your new data set is       Airline Source Destination Total_Stops  Journey_Day  ...  Dep_min  Arrival_hour  Arrival_min  Duration_hour  Duration_min
+0  Jet Airways  Delhi      Cochin           2           27  ...       51            14           51              4             0
+
+[1 rows x 12 columns]
+[ 2023-06-25 10:52:05,239 ] 187 werkzeug - INFO - 127.0.0.1 - - [25/Jun/2023 10:52:05] "POST /predict HTTP/1.1" 200 -
+[ 2023-06-25 10:52:05,339 ] 187 werkzeug - INFO - 127.0.0.1 - - [25/Jun/2023 10:52:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -

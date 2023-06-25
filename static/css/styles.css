@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body {
+    background-color: #e1f4f3;
+    text-align: center;
+    background-image: url(https://cdn.wallpapersafari.com/45/30/TqzBen.jpg);
+    background-size: 1710px 800px;
+}
+
+.navbar {
+    background-color: rgba(110, 50, 50, 0.3);
+}
+
+a {
+    color: #f1f9f9;
+}
+
+a:hover {
+    color: #000000;
+  }
+
+a.Database {
+    color: #1a4964;
+    padding: 5px;
+    background-color: #e1f4f3;
+    border-radius: 8px;
+}
+a.Database:hover{
+    color: #3383b1;
+}
+
+.container-fluid{
+    padding: 10px;
+}
+.row{
+    flex-wrap: nowrap;
+    margin-left: -70px;
+}
+.date{
+    block-size: 20px;
+    margin-left: -5px;
+    width: 190px;
+    
+}
+.date1{
+    block-size: 20px;
+    margin-left: -15px;
+    width: 190px;
+}
+.form{
+    display: inline-block;
+}
+
+.card-title{
+    display: inline-block;
+    align-content: center;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.card{
+    padding-right: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.prediction_text{
+    font-family: cursive;
+}
+.btn-secondary{
+    background-color: rgb(34, 89, 121);
+    font-size: 20px;
+}
