@@ -77,7 +77,7 @@ class CustomData:
 
             df = pd.DataFrame(custom_data_input_dict)
             logging.info('DataFrame Gathered')
-            logging.info(f'Your new data set is{df}')
+            logging.info(f'Input New Dataset is: {df}')
             return df
         
         except Exception as e:
