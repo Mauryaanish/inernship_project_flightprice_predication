@@ -1,0 +1,12 @@
+[ 2023-06-27 23:09:36,653 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-06-27 23:09:36,684 ] 187 werkzeug - INFO -  * Debugger PIN: 144-314-113
+[ 2023-06-27 23:09:44,454 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Jun/2023 23:09:44] "GET /predict HTTP/1.1" 200 -
+[ 2023-06-27 23:09:44,621 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Jun/2023 23:09:44] "GET /static/css/styles.css HTTP/1.1" 200 -
+[ 2023-06-27 23:09:47,247 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Jun/2023 23:09:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-06-27 23:10:26,678 ] 79 root - INFO - DataFrame Gathered
+[ 2023-06-27 23:10:26,747 ] 80 root - INFO - Input New Dataset is:    Airline   Source Destination Total_Stops  Journey_Day  ...  Dep_min  Arrival_hour  Arrival_min  Duration_hour  Duration_min
+0  Vistara  Kolkata   Hyderabad           2           28  ...        9            15           12              4             3
+
+[1 rows x 12 columns]
+[ 2023-06-27 23:10:36,432 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Jun/2023 23:10:36] "POST /predict HTTP/1.1" 200 -
+[ 2023-06-27 23:10:36,505 ] 187 werkzeug - INFO - 127.0.0.1 - - [27/Jun/2023 23:10:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
