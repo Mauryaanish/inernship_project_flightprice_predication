@@ -2,3 +2,4 @@ build
 dist
 Flight_Price_prediction.egg-info
 venv
+/logs
