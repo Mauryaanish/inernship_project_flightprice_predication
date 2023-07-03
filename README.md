@@ -61,7 +61,8 @@ Here we will build the Machine Learning model using all regression algorithms
 Here model evaluation will be done on the model which we got in the model building stage. We can define base accuracy of the model and if model accuracy is higher then base accuracy, then only our model will accept otherwise it will be rejected.
 
 ### :- Model Deployment 
-Here model will be deployed to Azure cloud platform.
+Here the model is deployed to the Azure cloud platform.
+Link:- https://flightprice.azurewebsites.net/
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maurya-anish-1457bb13b)
 
