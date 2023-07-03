@@ -20,7 +20,7 @@ A flight price prediction project aims to forecast the prices of airline tickets
 
 - [Architecture Design](https://github.com/Mauryaanish/inernship_preoject_flightprice_predication/blob/main/Documents/Architecture%20Design%20Flightt%20Price%20Prediction%20(1).pdf)
 
-- [Detail Project Report](https://github.com/Mauryaanish/inernship_preoject_flightprice_predication/blob/main/Documents/Detail%20Project%20Report%20(1).pdf)
+- [Detail Project Report](https://github.com/Mauryaanish/inernship_preoject_flightprice_predication/blob/main/Documents/Detail%20Project%20Report.pdf)
 
 - [Wireframe Documentation](https://github.com/Mauryaanish/inernship_preoject_flightprice_predication/blob/main/Documents/Wireframe%20Documentation%20Flight%20Price%20Prediction%20(1).pdf)
 
